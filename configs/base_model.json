@@ -2,12 +2,12 @@
 
     "model_fn":"NeuralNet",
     "l1_kwargs":{
-        "in_size" : 24,
-        "out_size" : 90
+        "in_features" : 25,
+        "out_features" : 90
     },
     "l2_kwargs":{
-        "in_size" : 90,
-        "out_size" : 29
+        "in_features" : 90,
+        "out_features" : 29
     },
 
     "loss": {
@@ -27,13 +27,13 @@
     },
     "training":{
         "max_epochs" : 15,
-        "accelerator" : "gpu",
+
         "devices" : "4",
         "strategy": "ddp_find_unused_parameters_false",
         "precision" : 16
     },
     "data": {
-        "batchsize": 20
+        "batch_size": 20
     },
     "dryrun":false,
     "runname":"base",

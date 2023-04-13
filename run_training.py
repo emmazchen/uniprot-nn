@@ -1,9 +1,10 @@
 # for command line args and json config file parsing
 import sys
 import json
-# for linking model.py and lightning_modules.py files
+# for linking .py files
 from model import *
 from lightning_modules import *
+from data import train_dataset, val_dataset, test_dataset
 # for logging results
 import wandb
 from pytorch_lightning.loggers import WandbLogger
@@ -17,32 +18,26 @@ if len(args) == 1:
     with open(configfile) as m_stream:
         mconfig = json.load(m_stream)
 else:
-    configfile =  f"./configs/base_model.json"   # not sure if this works
+    configfile =  f"/Users/emmachen/Documents/aqlab/uniprot-nn/configs/base_model.json"   # not sure if this works
     with open(configfile) as m_stream:
         mconfig = json.load(m_stream)
 
 
 
 ## Load data 
-"""
 data_conf=mconfig['data']
-datamodule = LitDataModule(**data_conf)
-train_dl = datamodule.train_dataloader()
-val_dl = datamodule.val_dataloader()
-test_dl = datamodule.test_dataloader()
-"""
-# Need to figure out this part later
-
-
+train_dl = torch.utils.data.DataLoader(train_dataset, batch_size=data_conf['batch_size'], shuffle=True)
+val_dl = torch.utils.data.DataLoader(val_dataset, batch_size=data_conf['batch_size'], shuffle=True) 
+test_dl = torch.utils.data.DataLoader(test_dataset, batch_size=data_conf['batch_size'], shuffle=True) 
 
 ## instance model 
 _model = eval(mconfig['model_fn'])
-litmodel = LitModelWrapper(model = _model(**mconfig['model_kwargs']), loss_config= mconfig['loss'], optim_config = mconfig['optim'])
+litmodel = LitModelWrapper(model = _model(mconfig), loss_config= mconfig['loss'], optim_config = mconfig['optim'])
 
 
 
 ## instance wandb logger object
-plg= WandbLogger(project = mconfig['uniprot-nn'],
+plg= WandbLogger(project = mconfig['wandb_project'],
                  entity = 'emmazchen', 
                  config=mconfig) ## include your run config so that it gets logged to wandb 
 plg.watch(litmodel) ## this logs the gradients for your model 
