@@ -16,7 +16,7 @@ class LitModelWrapper(pl.LightningModule):
         self.model = model
         self.loss_fn = eval(loss_config['loss_fn'])()
         self.optim_config = optim_config
-        self.optimizers = self.configure_optimizers() #do we need this?
+        #self.optimizers = self.configure_optimizers() #do we need this?
 
     def forward(self, x):
         logits = self.model(x)
@@ -26,7 +26,7 @@ class LitModelWrapper(pl.LightningModule):
         X, label = batch
         batch_size = X.shape[0]
         logits = self.model(X)
-        loss = self.loss_fn(logits, label)
+        loss = self.loss_fn(logits, label.ravel())
         ## use self.log to log data to whatever type of logger you want( logger is handled by pl::Trainer)
         self.log('train_loss', loss, batch_size=batch_size)
         opt = self.optimizers()
@@ -38,7 +38,7 @@ class LitModelWrapper(pl.LightningModule):
         X, label = batch
         batch_size = X.shape[0]
         logits = self.model(X)
-        loss = self.loss_fn(logits, label)
+        loss = self.loss_fn(logits, label.ravel())
         self.log(f"validation_loss", loss, sync_dist = True, batch_size=batch_size) # sync_dists = True makes sure metric is averaged across multiple gpus; if set false, only gives bck data from 0th process 
         
     def test_step(self, batch, batch_idx, dataset_idx):## same as validation_step function
@@ -62,4 +62,4 @@ class LitModelWrapper(pl.LightningModule):
         optimizer_dict = {"optimizer" : optimizer#, 
             #"lr_scheduler" : scheduler_config
          }
-        return optimizer_dict
+        return optimizer   # it was originally optimizer_dict

@@ -4,12 +4,12 @@ import numpy as np
 import sklearn
 
 # read from csv into pd dataframe
-X_df = pd.read_csv('/Users/emmachen/Documents/aqlab/uniprot-nn/models/data/uniprot-X-aa-count.csv') 
-y_df = pd.read_csv('/Users/emmachen/Documents/aqlab/uniprot-nn/models/data/uniprot-y-label-encoded.csv')
+X_df = pd.read_csv('/Users/emmachen/Documents/aqlab/uniprot-nn/models/data/uniprot-X-aacount.csv') 
+y_df = pd.read_csv('/Users/emmachen/Documents/aqlab/uniprot-nn/models/data/uniprot-y-labelencoded.csv')
 
 # convert to numpy array
-X = np.array(X_df.values,'float') 
-y = np.array(y_df.values,'float')
+X = np.array(X_df,'float') 
+y = np.array(y_df,'float')
 
 # train test split
 from sklearn.model_selection import train_test_split

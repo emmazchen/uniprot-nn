@@ -2,7 +2,7 @@
 
     "model_fn":"NeuralNet",
     "l1_kwargs":{
-        "in_features" : 25,
+        "in_features" : 24,
         "out_features" : 90
     },
     "l2_kwargs":{
