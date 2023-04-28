@@ -1,0 +1,87 @@
+wandb_version: 1
+
+model_fn:
+  desc: null
+  value: NeuralNet
+l1_kwargs:
+  desc: null
+  value:
+    in_features: 25
+    out_features: 90
+l2_kwargs:
+  desc: null
+  value:
+    in_features: 90
+    out_features: 29
+loss:
+  desc: null
+  value:
+    loss_fn: nn.CrossEntropyLoss
+optim:
+  desc: null
+  value:
+    optim_fn: torch.optim.Adam
+    optim_kwargs:
+      lr: 0.0001
+      betas:
+      - 0.9
+      - 0.999
+      weight_decay: 1.0e-05
+    scheduler_fn: ''
+    scheduler_kwargs: {}
+training:
+  desc: null
+  value:
+    max_epochs: 15
+    devices: '4'
+    strategy: ddp_find_unused_parameters_false
+    precision: 16
+data:
+  desc: null
+  value:
+    batch_size: 20
+dryrun:
+  desc: null
+  value: false
+runname:
+  desc: null
+  value: base
+wandb_project:
+  desc: null
+  value: uniprot-nn
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.10
+    cli_version: 0.14.2
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1681410026.616696
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 9
+      - 53
+      - 55
+      3:
+      - 1
+      - 7
+      - 16
+      - 23
+      4: 3.10.10
+      5: 0.14.2
+      8:
+      - 4
+      - 5
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3

@@ -1,0 +1,80 @@
+[34m[1mwandb[39m[22m: logging graph, to disable use `wandb.watch(log_graph=False)`
+/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:744: UserWarning: You passed `Trainer(accelerator='cpu', precision=16)` but native AMP is not supported on CPU. Using `precision='bf16'` instead.
+  rank_zero_warn(
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/4
+----------------------------------------------------------------------------------------------------
+distributed_backend=gloo
+All distributed processes registered. Starting with 4 processes
+----------------------------------------------------------------------------------------------------
+  | Name  | Type      | Params
+------------------------------------
+0 | model | NeuralNet | 5.0 K
+------------------------------------
+5.0 K     Trainable params
+0         Non-trainable params
+5.0 K     Total params
+0.020     Total estimated model params size (MB)
+/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:488: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:224: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+Sanity Checking DataLoader 0:   0%|                       | 0/2 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/emmachen/Documents/aqlab/uniprot-nn/run_training.py", line 60, in <module>
+    trainer.fit(litmodel, train_dataloaders = train_dl, val_dataloaders=val_dl) ## this starts training
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 608, in fit
+    call._call_and_handle_interrupt(
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 36, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 88, in launch
+    return function(*args, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _fit_impl
+    self._run(model, ckpt_path=self.ckpt_path)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1112, in _run
+    results = self._run_stage()
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1191, in _run_stage
+    self._run_train()
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1204, in _run_train
+    self._run_sanity_check()
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1276, in _run_sanity_check
+    val_loop.run()
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
+    self.advance(*args, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 152, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
+    self.advance(*args, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 137, in advance
+    output = self._evaluation_step(**kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 234, in _evaluation_step
+    output = self.trainer._call_strategy_hook(hook_name, *kwargs.values())
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1494, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/strategies/ddp.py", line 359, in validation_step
+    return self.model(*args, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1008, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 971, in _run_ddp_forward
+    return module_to_run(*inputs, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/overrides/base.py", line 110, in forward
+    return self._forward_module.validation_step(*inputs, **kwargs)
+  File "/Users/emmachen/Documents/aqlab/uniprot-nn/lightning_modules.py", line 41, in validation_step
+    loss = self.loss_fn(logits, label)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 1159, in __init__
+    super(CrossEntropyLoss, self).__init__(weight, size_average, reduce, reduction)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 25, in __init__
+    super(_WeightedLoss, self).__init__(size_average, reduce, reduction)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 18, in __init__
+    self.reduction: str = _Reduction.legacy_get_string(size_average, reduce)
+  File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/_reduction.py", line 35, in legacy_get_string
+    if size_average and reduce:
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous

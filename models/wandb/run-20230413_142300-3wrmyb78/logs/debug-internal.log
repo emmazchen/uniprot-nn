@@ -1,0 +1,199 @@
+2023-04-13 14:23:00,817 INFO    StreamThr :74738 [internal.py:wandb_internal():86] W&B internal server running at pid: 74738, started at: 2023-04-13 14:23:00.817366
+2023-04-13 14:23:00,818 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: status
+2023-04-13 14:23:00,823 INFO    WriterThread:74738 [datastore.py:open_for_write():85] open: ./wandb/run-20230413_142300-3wrmyb78/run-3wrmyb78.wandb
+2023-04-13 14:23:00,823 DEBUG   SenderThread:74738 [sender.py:send():375] send: header
+2023-04-13 14:23:00,840 DEBUG   SenderThread:74738 [sender.py:send():375] send: run
+2023-04-13 14:23:00,842 INFO    SenderThread:74738 [sender.py:_maybe_setup_resume():761] checking resume status for emmazchen/uniprot-nn/3wrmyb78
+2023-04-13 14:23:01,265 INFO    SenderThread:74738 [dir_watcher.py:__init__():219] watching files in: ./wandb/run-20230413_142300-3wrmyb78/files
+2023-04-13 14:23:01,265 INFO    SenderThread:74738 [sender.py:_start_run_threads():1124] run started: 3wrmyb78 with start time 1681410180.819217
+2023-04-13 14:23:01,266 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: summary_record
+2023-04-13 14:23:01,266 INFO    SenderThread:74738 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-13 14:23:01,272 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: check_version
+2023-04-13 14:23:01,272 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: check_version
+2023-04-13 14:23:01,382 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: run_start
+2023-04-13 14:23:01,390 DEBUG   HandlerThread:74738 [system_info.py:__init__():31] System info init
+2023-04-13 14:23:01,390 DEBUG   HandlerThread:74738 [system_info.py:__init__():46] System info init done
+2023-04-13 14:23:01,390 INFO    HandlerThread:74738 [system_monitor.py:start():181] Starting system monitor
+2023-04-13 14:23:01,390 INFO    SystemMonitor:74738 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-04-13 14:23:01,391 INFO    HandlerThread:74738 [system_monitor.py:probe():201] Collecting system info
+2023-04-13 14:23:01,391 INFO    SystemMonitor:74738 [interfaces.py:start():190] Started cpu monitoring
+2023-04-13 14:23:01,391 DEBUG   HandlerThread:74738 [system_info.py:probe():195] Probing system
+2023-04-13 14:23:01,392 INFO    SystemMonitor:74738 [interfaces.py:start():190] Started disk monitoring
+2023-04-13 14:23:01,392 INFO    SystemMonitor:74738 [interfaces.py:start():190] Started gpuapple monitoring
+2023-04-13 14:23:01,395 INFO    SystemMonitor:74738 [interfaces.py:start():190] Started memory monitoring
+2023-04-13 14:23:01,396 INFO    SystemMonitor:74738 [interfaces.py:start():190] Started network monitoring
+2023-04-13 14:23:01,401 DEBUG   HandlerThread:74738 [system_info.py:_probe_git():180] Probing git
+2023-04-13 14:23:01,425 DEBUG   HandlerThread:74738 [system_info.py:_probe_git():188] Probing git done
+2023-04-13 14:23:01,425 DEBUG   HandlerThread:74738 [system_info.py:probe():240] Probing system done
+2023-04-13 14:23:01,425 DEBUG   HandlerThread:74738 [system_monitor.py:probe():210] {'os': 'macOS-13.1-arm64-arm-64bit', 'python': '3.10.10', 'heartbeatAt': '2023-04-13T18:23:01.391923', 'startedAt': '2023-04-13T18:23:00.808256', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/emmachen/Documents/aqlab/uniprot-nn/run_training.py', 'codePath': 'run_training.py', 'git': {'remote': 'git@github.com:emmazchen/uniprot-nn.git', 'commit': '6cff6f060533300ffefd030800241c8c1745b20b'}, 'email': None, 'root': '/Users/emmachen/Documents/aqlab/uniprot-nn', 'host': 'Emmas-MacBook.local', 'username': 'emmachen', 'executable': '/Users/emmachen/mambaforge/envs/aqlab/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'total': 228.27386474609375, 'used': 10.970867156982422}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 8.0}}
+2023-04-13 14:23:01,426 INFO    HandlerThread:74738 [system_monitor.py:probe():211] Finished collecting system info
+2023-04-13 14:23:01,426 INFO    HandlerThread:74738 [system_monitor.py:probe():214] Publishing system info
+2023-04-13 14:23:01,426 DEBUG   HandlerThread:74738 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-13 14:23:01,426 DEBUG   HandlerThread:74738 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-13 14:23:01,426 DEBUG   HandlerThread:74738 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-13 14:23:02,271 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230413_142300-3wrmyb78/files/wandb-summary.json
+2023-04-13 14:23:02,271 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230413_142300-3wrmyb78/files/conda-environment.yaml
+2023-04-13 14:23:02,272 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230413_142300-3wrmyb78/files/requirements.txt
+2023-04-13 14:23:02,314 DEBUG   HandlerThread:74738 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-13 14:23:02,315 INFO    HandlerThread:74738 [system_monitor.py:probe():216] Finished publishing system info
+2023-04-13 14:23:02,316 DEBUG   SenderThread:74738 [sender.py:send():375] send: files
+2023-04-13 14:23:02,316 INFO    SenderThread:74738 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-04-13 14:23:02,320 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-13 14:23:02,320 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: stop_status
+2023-04-13 14:23:02,410 DEBUG   SenderThread:74738 [sender.py:send():375] send: telemetry
+2023-04-13 14:23:02,410 DEBUG   SenderThread:74738 [sender.py:send():375] send: metric
+2023-04-13 14:23:02,410 DEBUG   SenderThread:74738 [sender.py:send():375] send: telemetry
+2023-04-13 14:23:02,410 DEBUG   SenderThread:74738 [sender.py:send():375] send: metric
+2023-04-13 14:23:02,410 WARNING SenderThread:74738 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-04-13 14:23:02,410 DEBUG   SenderThread:74738 [sender.py:send():375] send: telemetry
+2023-04-13 14:23:02,411 DEBUG   SenderThread:74738 [sender.py:send():375] send: files
+2023-04-13 14:23:02,411 INFO    SenderThread:74738 [sender.py:_save_file():1378] saving file media/graph/graph_0_summary_1b3c89448a5b2a00f537.graph.json with policy now
+2023-04-13 14:23:02,411 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: summary_record
+2023-04-13 14:23:02,411 INFO    SenderThread:74738 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-13 14:23:02,412 DEBUG   SenderThread:74738 [sender.py:send():375] send: exit
+2023-04-13 14:23:02,412 INFO    SenderThread:74738 [sender.py:send_exit():598] handling exit code: 1
+2023-04-13 14:23:02,412 INFO    SenderThread:74738 [sender.py:send_exit():600] handling runtime: 0
+2023-04-13 14:23:02,413 INFO    SenderThread:74738 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-13 14:23:02,413 INFO    SenderThread:74738 [sender.py:send_exit():606] send defer
+2023-04-13 14:23:02,414 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:02,414 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-13 14:23:02,414 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:02,414 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-04-13 14:23:02,414 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 1
+2023-04-13 14:23:02,414 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:02,414 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-13 14:23:02,414 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:02,414 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-04-13 14:23:02,414 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 2
+2023-04-13 14:23:02,414 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:02,414 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-13 14:23:02,414 INFO    HandlerThread:74738 [system_monitor.py:finish():190] Stopping system monitor
+2023-04-13 14:23:02,414 DEBUG   SystemMonitor:74738 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-04-13 14:23:02,414 INFO    HandlerThread:74738 [interfaces.py:finish():202] Joined cpu monitor
+2023-04-13 14:23:02,414 DEBUG   SystemMonitor:74738 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-04-13 14:23:02,414 INFO    HandlerThread:74738 [interfaces.py:finish():202] Joined disk monitor
+2023-04-13 14:23:02,414 DEBUG   SystemMonitor:74738 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-04-13 14:23:02,414 INFO    HandlerThread:74738 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-04-13 14:23:02,415 INFO    HandlerThread:74738 [interfaces.py:finish():202] Joined memory monitor
+2023-04-13 14:23:02,415 INFO    HandlerThread:74738 [interfaces.py:finish():202] Joined network monitor
+2023-04-13 14:23:02,415 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:02,415 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-04-13 14:23:02,415 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 3
+2023-04-13 14:23:02,415 DEBUG   SenderThread:74738 [sender.py:send():375] send: telemetry
+2023-04-13 14:23:02,415 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:02,415 DEBUG   SenderThread:74738 [sender.py:send():375] send: stats
+2023-04-13 14:23:02,415 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-13 14:23:02,415 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:02,415 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-04-13 14:23:02,415 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 4
+2023-04-13 14:23:02,415 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:02,415 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-13 14:23:02,415 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:02,415 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-04-13 14:23:02,415 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 5
+2023-04-13 14:23:02,415 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:02,415 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-13 14:23:02,415 DEBUG   SenderThread:74738 [sender.py:send():375] send: summary
+2023-04-13 14:23:02,416 INFO    SenderThread:74738 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-13 14:23:02,416 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:02,416 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-04-13 14:23:02,416 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 6
+2023-04-13 14:23:02,416 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:02,416 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-13 14:23:02,416 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:02,416 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-04-13 14:23:02,417 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: status_report
+2023-04-13 14:23:02,561 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 7
+2023-04-13 14:23:02,561 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:02,562 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-13 14:23:02,562 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:02,562 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-04-13 14:23:02,743 INFO    wandb-upload_0:74738 [upload_job.py:push():137] Uploaded file /var/folders/_r/m8cfn2r56gl41szmtj63xgmw0000gn/T/tmpvy7d7sq1wandb/zqx32lv4-wandb-metadata.json
+2023-04-13 14:23:02,803 INFO    wandb-upload_1:74738 [upload_job.py:push():137] Uploaded file /var/folders/_r/m8cfn2r56gl41szmtj63xgmw0000gn/T/tmpvy7d7sq1wandb/uyrhoigx-media/graph/graph_0_summary_1b3c89448a5b2a00f537.graph.json
+2023-04-13 14:23:03,277 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230413_142300-3wrmyb78/files/wandb-summary.json
+2023-04-13 14:23:03,278 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230413_142300-3wrmyb78/files/config.yaml
+2023-04-13 14:23:03,278 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230413_142300-3wrmyb78/files/conda-environment.yaml
+2023-04-13 14:23:03,279 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230413_142300-3wrmyb78/files/wandb-metadata.json
+2023-04-13 14:23:03,279 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230413_142300-3wrmyb78/files/media/graph/graph_0_summary_1b3c89448a5b2a00f537.graph.json
+2023-04-13 14:23:03,280 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230413_142300-3wrmyb78/files/output.log
+2023-04-13 14:23:03,280 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230413_142300-3wrmyb78/files/media/graph
+2023-04-13 14:23:03,281 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230413_142300-3wrmyb78/files/media
+2023-04-13 14:23:03,364 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-13 14:23:03,970 INFO    wandb-upload_0:74738 [upload_job.py:push():137] Uploaded file /var/folders/_r/m8cfn2r56gl41szmtj63xgmw0000gn/T/tmpvy7d7sq1wandb/u5el5rh5-media/graph/graph_0_summary_1b3c89448a5b2a00f537.graph.json
+2023-04-13 14:23:05,285 INFO    Thread-12 :74738 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230413_142300-3wrmyb78/files/output.log
+2023-04-13 14:23:06,419 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 8
+2023-04-13 14:23:06,420 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: poll_exit
+2023-04-13 14:23:06,420 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:06,420 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-13 14:23:06,420 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:06,420 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-04-13 14:23:06,431 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 9
+2023-04-13 14:23:06,432 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:06,432 DEBUG   SenderThread:74738 [sender.py:send():375] send: artifact
+2023-04-13 14:23:06,432 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-13 14:23:07,042 INFO    SenderThread:74738 [sender.py:send_artifact():1474] sent artifact job-git_github.com_emmazchen_uniprot-nn.git_run_training.py - {'id': 'QXJ0aWZhY3Q6NDIzMDkzMzQ1', 'digest': '868f911a67ab74590f98e96432259a74', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-git_github.com_emmazchen_uniprot-nn.git_run_training.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-git_github.com_emmazchen_uniprot-nn.git_run_training.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYyMTEwMzI4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDIzMDkzMzQ1', 'versionIndex': 0}}, 'version': 'v0'}
+2023-04-13 14:23:07,042 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:07,042 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-04-13 14:23:07,043 INFO    SenderThread:74738 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-13 14:23:07,297 INFO    SenderThread:74738 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230413_142300-3wrmyb78/files/output.log
+2023-04-13 14:23:07,298 INFO    SenderThread:74738 [dir_watcher.py:finish():395] scan: ./wandb/run-20230413_142300-3wrmyb78/files
+2023-04-13 14:23:07,299 INFO    SenderThread:74738 [dir_watcher.py:finish():409] scan save: ./wandb/run-20230413_142300-3wrmyb78/files/requirements.txt requirements.txt
+2023-04-13 14:23:07,303 INFO    SenderThread:74738 [dir_watcher.py:finish():409] scan save: ./wandb/run-20230413_142300-3wrmyb78/files/output.log output.log
+2023-04-13 14:23:07,306 INFO    SenderThread:74738 [dir_watcher.py:finish():409] scan save: ./wandb/run-20230413_142300-3wrmyb78/files/config.yaml config.yaml
+2023-04-13 14:23:07,310 INFO    SenderThread:74738 [dir_watcher.py:finish():409] scan save: ./wandb/run-20230413_142300-3wrmyb78/files/wandb-summary.json wandb-summary.json
+2023-04-13 14:23:07,313 INFO    SenderThread:74738 [dir_watcher.py:finish():409] scan save: ./wandb/run-20230413_142300-3wrmyb78/files/conda-environment.yaml conda-environment.yaml
+2023-04-13 14:23:07,316 INFO    SenderThread:74738 [dir_watcher.py:finish():409] scan save: ./wandb/run-20230413_142300-3wrmyb78/files/wandb-metadata.json wandb-metadata.json
+2023-04-13 14:23:07,317 INFO    SenderThread:74738 [dir_watcher.py:finish():409] scan save: ./wandb/run-20230413_142300-3wrmyb78/files/media/graph/graph_0_summary_1b3c89448a5b2a00f537.graph.json media/graph/graph_0_summary_1b3c89448a5b2a00f537.graph.json
+2023-04-13 14:23:07,317 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 10
+2023-04-13 14:23:07,317 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:07,317 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-13 14:23:07,317 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:07,317 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-04-13 14:23:07,318 INFO    SenderThread:74738 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-13 14:23:07,632 INFO    wandb-upload_1:74738 [upload_job.py:push():137] Uploaded file ./wandb/run-20230413_142300-3wrmyb78/files/requirements.txt
+2023-04-13 14:23:07,638 INFO    wandb-upload_0:74738 [upload_job.py:push():137] Uploaded file ./wandb/run-20230413_142300-3wrmyb78/files/output.log
+2023-04-13 14:23:07,703 INFO    wandb-upload_3:74738 [upload_job.py:push():137] Uploaded file ./wandb/run-20230413_142300-3wrmyb78/files/wandb-summary.json
+2023-04-13 14:23:07,732 INFO    wandb-upload_2:74738 [upload_job.py:push():137] Uploaded file ./wandb/run-20230413_142300-3wrmyb78/files/config.yaml
+2023-04-13 14:23:07,776 INFO    wandb-upload_4:74738 [upload_job.py:push():137] Uploaded file ./wandb/run-20230413_142300-3wrmyb78/files/conda-environment.yaml
+2023-04-13 14:23:07,982 INFO    Thread-11 (_thread_body):74738 [sender.py:transition_state():626] send defer: 11
+2023-04-13 14:23:07,983 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:07,983 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 11
+2023-04-13 14:23:07,983 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:07,983 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-04-13 14:23:07,984 INFO    SenderThread:74738 [file_pusher.py:join():173] waiting for file pusher
+2023-04-13 14:23:07,984 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 12
+2023-04-13 14:23:07,984 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:07,984 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 12
+2023-04-13 14:23:07,984 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:07,984 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-04-13 14:23:08,386 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-13 14:23:13,411 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-13 14:23:15,467 WARNING FileStreamThread:74738 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: 502 Server Error: Bad Gateway for url: https://api.wandb.ai/files/emmazchen/uniprot-nn/3wrmyb78/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x10b40a890>>, args: ('https://api.wandb.ai/files/emmazchen/uniprot-nn/3wrmyb78/file_stream',), kwargs: {'json': {'files': {'output.log': {'offset': 0, 'content': ['2023-04-13T18:23:04.412929 Sanity Checking DataLoader 0:   0%|                                                                                      | 0/2 [00:00<?, ?it/s]\n', 'ERROR 2023-04-13T18:23:04.420942 \x1b[34m\x1b[1mwandb\x1b[39m\x1b[22m: logging graph, to disable use `wandb.watch(log_graph=False)`\n', "ERROR 2023-04-13T18:23:04.420942 /Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:744: UserWarning: You passed `Trainer(accelerator='cpu', precision=16)` but native AMP is not supported on CPU. Using `precision='bf16'` instead.\n", 'ERROR 2023-04-13T18:23:04.420942   rank_zero_warn(\n', 'ERROR 2023-04-13T18:23:04.420942 Using bfloat16 Automatic Mixed Precision (AMP)\n', 'ERROR 2023-04-13T18:23:04.420942 GPU available: False, used: False\n', 'ERROR 2023-04-13T18:23:04.420942 TPU available: False, using: 0 TPU cores\n', 'ERROR 2023-04-13T18:23:04.420942 IPU available: False, using: 0 IPUs\n', 'ERROR 2023-04-13T18:23:04.420942 HPU available: False, using: 0 HPUs\n', 'ERROR 2023-04-13T18:23:04.420942 Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1\n', 'ERROR 2023-04-13T18:23:04.420942 ----------------------------------------------------------------------------------------------------\n', 'ERROR 2023-04-13T18:23:04.420942 distributed_backend=gloo\n', 'ERROR 2023-04-13T18:23:04.420942 All distributed processes registered. Starting with 1 processes\n', 'ERROR 2023-04-13T18:23:04.420942 ----------------------------------------------------------------------------------------------------\n', 'ERROR 2023-04-13T18:23:04.420942   | Name  | Type      | Params\n', 'ERROR 2023-04-13T18:23:04.420942 ------------------------------------\n', 'ERROR 2023-04-13T18:23:04.420942 0 | model | NeuralNet | 5.0 K\n', 'ERROR 2023-04-13T18:23:04.420942 ------------------------------------\n', 'ERROR 2023-04-13T18:23:04.420942 5.0 K     Trainable params\n', 'ERROR 2023-04-13T18:23:04.420942 0         Non-trainable params\n', 'ERROR 2023-04-13T18:23:04.420942 5.0 K     Total params\n', 'ERROR 2023-04-13T18:23:04.420942 0.020     Total estimated model params size (MB)\n', "ERROR 2023-04-13T18:23:04.420942 /Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:488: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.\n", 'ERROR 2023-04-13T18:23:04.420942   rank_zero_warn(\n', 'ERROR 2023-04-13T18:23:04.420942 /Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:224: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.\n', 'ERROR 2023-04-13T18:23:04.420942   rank_zero_warn(\n', 'ERROR 2023-04-13T18:23:04.420942 Traceback (most recent call last):\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/Documents/aqlab/uniprot-nn/run_training.py", line 60, in <module>\n', 'ERROR 2023-04-13T18:23:04.420942     trainer.fit(litmodel, train_dataloaders = train_dl, val_dataloaders=val_dl) ## this starts training\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 608, in fit\n', 'ERROR 2023-04-13T18:23:04.420942     call._call_and_handle_interrupt(\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 36, in _call_and_handle_interrupt\n', 'ERROR 2023-04-13T18:23:04.420942     return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 88, in launch\n', 'ERROR 2023-04-13T18:23:04.420942     return function(*args, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _fit_impl\n', 'ERROR 2023-04-13T18:23:04.420942     self._run(model, ckpt_path=self.ckpt_path)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1112, in _run\n', 'ERROR 2023-04-13T18:23:04.420942     results = self._run_stage()\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1191, in _run_stage\n', 'ERROR 2023-04-13T18:23:04.420942     self._run_train()\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1204, in _run_train\n', 'ERROR 2023-04-13T18:23:04.420942     self._run_sanity_check()\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1276, in _run_sanity_check\n', 'ERROR 2023-04-13T18:23:04.420942     val_loop.run()\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run\n', 'ERROR 2023-04-13T18:23:04.420942     self.advance(*args, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 152, in advance\n', 'ERROR 2023-04-13T18:23:04.420942     dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run\n', 'ERROR 2023-04-13T18:23:04.420942     self.advance(*args, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 137, in advance\n', 'ERROR 2023-04-13T18:23:04.420942     output = self._evaluation_step(**kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 234, in _evaluation_step\n', 'ERROR 2023-04-13T18:23:04.420942     output = self.trainer._call_strategy_hook(hook_name, *kwargs.values())\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1494, in _call_strategy_hook\n', 'ERROR 2023-04-13T18:23:04.420942     output = fn(*args, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/strategies/ddp.py", line 359, in validation_step\n', 'ERROR 2023-04-13T18:23:04.420942     return self.model(*args, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl\n', 'ERROR 2023-04-13T18:23:04.420942     return forward_call(*input, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1008, in forward\n', 'ERROR 2023-04-13T18:23:04.420942     output = self._run_ddp_forward(*inputs, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 971, in _run_ddp_forward\n', 'ERROR 2023-04-13T18:23:04.420942     return module_to_run(*inputs, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl\n', 'ERROR 2023-04-13T18:23:04.420942     return forward_call(*input, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/pytorch_lightning/overrides/base.py", line 110, in forward\n', 'ERROR 2023-04-13T18:23:04.420942     return self._forward_module.validation_step(*inputs, **kwargs)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/Documents/aqlab/uniprot-nn/lightning_modules.py", line 41, in validation_step\n', 'ERROR 2023-04-13T18:23:04.420942     loss = self.loss_fn(logits, label)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 1159, in __init__\n', 'ERROR 2023-04-13T18:23:04.420942     super(CrossEntropyLoss, self).__init__(weight, size_average, reduce, reduction)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 25, in __init__\n', 'ERROR 2023-04-13T18:23:04.420942     super(_WeightedLoss, self).__init__(size_average, reduce, reduction)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 18, in __init__\n', 'ERROR 2023-04-13T18:23:04.420942     self.reduction: str = _Reduction.legacy_get_string(size_average, reduce)\n', 'ERROR 2023-04-13T18:23:04.420942   File "/Users/emmachen/mambaforge/envs/aqlab/lib/python3.10/site-packages/torch/nn/_reduction.py", line 35, in legacy_get_string\n', 'ERROR 2023-04-13T18:23:04.420942     if size_average and reduce:\n', 'ERROR 2023-04-13T18:23:04.420942 RuntimeError: Boolean value of Tensor with more than one value is ambiguous\n']}}, 'dropped': 0}}
+2023-04-13 14:23:17,999 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 13
+2023-04-13 14:23:17,999 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:17,999 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 13
+2023-04-13 14:23:17,999 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: status_report
+2023-04-13 14:23:17,999 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:17,999 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-04-13 14:23:17,999 INFO    SenderThread:74738 [sender.py:transition_state():626] send defer: 14
+2023-04-13 14:23:17,999 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: defer
+2023-04-13 14:23:17,999 INFO    HandlerThread:74738 [handler.py:handle_request_defer():170] handle defer: 14
+2023-04-13 14:23:17,999 DEBUG   SenderThread:74738 [sender.py:send():375] send: final
+2023-04-13 14:23:18,000 DEBUG   SenderThread:74738 [sender.py:send():375] send: footer
+2023-04-13 14:23:18,000 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: defer
+2023-04-13 14:23:18,000 INFO    SenderThread:74738 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-04-13 14:23:18,000 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-13 14:23:18,000 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: poll_exit
+2023-04-13 14:23:18,000 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: server_info
+2023-04-13 14:23:18,000 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-13 14:23:18,001 DEBUG   SenderThread:74738 [sender.py:send_request():402] send_request: server_info
+2023-04-13 14:23:18,002 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: sampled_history
+2023-04-13 14:23:18,061 INFO    MainThread:74738 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2023-04-13 14:23:18,061 INFO    MainThread:74738 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2023-04-13 14:23:18,061 INFO    MainThread:74738 [wandb_run.py:_footer_sync_info():3434] logging synced files
+2023-04-13 14:23:18,061 DEBUG   HandlerThread:74738 [handler.py:handle_request():144] handle_request: shutdown
+2023-04-13 14:23:18,061 INFO    HandlerThread:74738 [handler.py:finish():845] shutting down handler
+2023-04-13 14:23:19,005 INFO    WriterThread:74738 [datastore.py:close():298] close: ./wandb/run-20230413_142300-3wrmyb78/run-3wrmyb78.wandb
+2023-04-13 14:23:19,064 INFO    SenderThread:74738 [sender.py:finish():1550] shutting down sender
+2023-04-13 14:23:19,065 INFO    SenderThread:74738 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-13 14:23:19,065 INFO    SenderThread:74738 [file_pusher.py:join():173] waiting for file pusher

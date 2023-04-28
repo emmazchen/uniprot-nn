@@ -1,0 +1,34 @@
+{
+    "os": "macOS-13.1-arm64-arm-64bit",
+    "python": "3.10.10",
+    "heartbeatAt": "2023-04-28T01:13:42.101929",
+    "startedAt": "2023-04-28T01:13:41.629892",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/emmachen/Documents/aqlab/uniprot-nn/models/run_training.py",
+    "codePath": "models/run_training.py",
+    "git": {
+        "remote": "git@github.com:emmazchen/uniprot-nn.git",
+        "commit": "232c5d8d0661fdee248725222dcbe8b9b78e3050"
+    },
+    "email": null,
+    "root": "/Users/emmachen/Documents/aqlab/uniprot-nn",
+    "host": "Emmas-MacBook.local",
+    "username": "emmachen",
+    "executable": "/Users/emmachen/mambaforge/envs/aqlab/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "total": 228.27386474609375,
+        "used": 11.968704223632812
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

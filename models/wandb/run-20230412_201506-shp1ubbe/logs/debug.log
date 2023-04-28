@@ -1,0 +1,27 @@
+2023-04-12 20:15:06,832 INFO    MainThread:61208 [wandb_setup.py:_flush():76] Configure stats pid to 61208
+2023-04-12 20:15:06,832 INFO    MainThread:61208 [wandb_setup.py:_flush():76] Loading settings from /Users/emmachen/.config/wandb/settings
+2023-04-12 20:15:06,832 INFO    MainThread:61208 [wandb_setup.py:_flush():76] Loading settings from /Users/emmachen/Documents/aqlab/uniprot-nn/wandb/settings
+2023-04-12 20:15:06,832 INFO    MainThread:61208 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-04-12 20:15:06,832 INFO    MainThread:61208 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-04-12 20:15:06,832 INFO    MainThread:61208 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run_training.py', 'program': '/Users/emmachen/Documents/aqlab/uniprot-nn/run_training.py'}
+2023-04-12 20:15:06,832 INFO    MainThread:61208 [wandb_init.py:_log_setup():507] Logging user logs to ./wandb/run-20230412_201506-shp1ubbe/logs/debug.log
+2023-04-12 20:15:06,832 INFO    MainThread:61208 [wandb_init.py:_log_setup():508] Logging internal logs to ./wandb/run-20230412_201506-shp1ubbe/logs/debug-internal.log
+2023-04-12 20:15:06,833 INFO    MainThread:61208 [wandb_init.py:init():547] calling init triggers
+2023-04-12 20:15:06,833 INFO    MainThread:61208 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'model_fn': 'NeuralNet', 'l1_kwargs': {'in_features': 25, 'out_features': 90}, 'l2_kwargs': {'in_features': 90, 'out_features': 29}, 'loss': {'loss_fn': 'nn.CrossEntropyLoss()'}, 'optim': {'optim_fn': 'torch.optim.Adam', 'optim_kwargs': {'lr': 0.0001, 'betas': [0.9, 0.999], 'weight_decay': 1e-05}, 'scheduler_fn': '', 'scheduler_kwargs': {}}, 'training': {'max_epochs': 15, 'devices': '4', 'strategy': 'ddp_find_unused_parameters_false', 'precision': 16}, 'data': {'batch_size': 20}, 'dryrun': False, 'runname': 'base', 'wandb_project': 'uniprot-nn'}
+2023-04-12 20:15:06,833 INFO    MainThread:61208 [wandb_init.py:init():595] starting backend
+2023-04-12 20:15:06,833 INFO    MainThread:61208 [wandb_init.py:init():599] setting up manager
+2023-04-12 20:15:06,835 INFO    MainThread:61208 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-04-12 20:15:06,838 INFO    MainThread:61208 [wandb_init.py:init():605] backend started and connected
+2023-04-12 20:15:06,842 INFO    MainThread:61208 [wandb_init.py:init():695] updated telemetry
+2023-04-12 20:15:06,869 INFO    MainThread:61208 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-04-12 20:15:07,066 INFO    MainThread:61208 [wandb_run.py:_on_init():2176] communicating current version
+2023-04-12 20:15:07,099 INFO    MainThread:61208 [wandb_run.py:_on_init():2185] got version response 
+2023-04-12 20:15:07,099 INFO    MainThread:61208 [wandb_init.py:init():782] starting run threads in backend
+2023-04-12 20:15:08,214 INFO    MainThread:61208 [wandb_run.py:_console_start():2157] atexit reg
+2023-04-12 20:15:08,216 INFO    MainThread:61208 [wandb_run.py:_redirect():2012] redirect: SettingsConsole.WRAP_RAW
+2023-04-12 20:15:08,216 INFO    MainThread:61208 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-04-12 20:15:08,216 INFO    MainThread:61208 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-04-12 20:15:08,216 INFO    MainThread:61208 [wandb_init.py:init():824] run started, returning control to user process
+2023-04-12 20:15:08,217 INFO    MainThread:61208 [wandb_watch.py:watch():51] Watching
+2023-04-12 20:15:20,931 WARNING MsgRouterThr:61208 [router.py:message_loop():77] message_loop has been closed
