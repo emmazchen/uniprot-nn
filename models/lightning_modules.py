@@ -18,8 +18,9 @@ class LitModelWrapper(pl.LightningModule):
         self.optim_config = optim_config
         #self.optimizers = self.configure_optimizers() #do we need this?
 
-    def forward(self, x):
-        logits = self.model(x)
+    def forward(self, batch):
+        X, label = batch
+        logits = self.model(X)
         return logits
 
     def training_step(self, batch, batch_idx):
